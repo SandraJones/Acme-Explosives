@@ -1,0 +1,28 @@
+{
+    "products": [
+        {
+        	"sparklers": {
+            "id": 0,
+            "type": 0,
+            "name": "Sparklers",
+            "description": "Multi-colored sparklers"
+        	}
+        },	
+        {
+        "m80s": {
+            "id": 1,
+            "type": 1,
+            "name": "M80s",
+            "description": "Loud explosives"
+       	 }
+       	},
+       	{
+        "Roman_Candles": {
+            "id": 2,
+            "type": 2,
+            "name": "Roman Candles",
+            "description": "Multi-colored rockets"
+        	}
+     		}
+    ]
+}
