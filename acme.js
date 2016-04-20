@@ -19,7 +19,7 @@ function getCategories() {
 };
 var amAPromise = getTypes();
 function getTypes(){
-      return new Promise ((resolve, reject)=> {
+      return new Promise((resolve, reject) => {
           var typesLoader = new XMLHttpRequest();
           typesLoader.addEventListener("load", function() {
               var typesList = JSON.parse(this.responseText).types;
@@ -32,7 +32,45 @@ function getTypes(){
           typesLoader.send();
       });
 };
+var aPromise = getProducts();
+function getProducts(){
+      return new Promise((resolve, reject)=> {
+          var productsLoader = new XMLHttpRequest();
+          productsLoader.addEventListener("load", function() {
+              var productsList = JSON.parse(this.responseText).types;
+              resolve (productsList);
+          });
+          productsLoader.addEventListener("error", function(){    
+            reject();
+            });
+          productsLoader.open("GET","products.json");
+          productsLoader.send();
+      });
+};
 
-getCategories().then
-    getTypes();
-  
+iAmAPromise.then(function(value1){
+    console.log("value", value1);
+    });
+
+  amAPromise.then(function(value2){
+    console.log("value", value2);
+    });
+    aPromise.then(function(value3){
+      console.log("value", value3);
+    });
+
+
+
+// //Original call site of the promise
+// getCategories()
+//   // Then gets executed when promise is resolved or rejected
+//   .then(
+//     // The first callback function will be invoked when you resolve
+//     function(categList) {
+//       console.log("API call successful and responded with", json_data);
+//     },
+//     // The second callback function will be invoked when you reject
+//     function(json_data) {
+//       console.log("API call not successful");
+//     }
+//   );  
