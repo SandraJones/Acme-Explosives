@@ -1,28 +1,148 @@
 {
     "products": [
         {
-        	"sparklers": {
-            "id": 0,
-            "type": 0,
+        "sparklers": {
+            "id": 10,
+            "type": 200,
             "name": "Sparklers",
             "description": "Multi-colored sparklers"
         	}
         },	
         {
         "m80s": {
-            "id": 1,
-            "type": 1,
+            "id": 9,
+            "type": 200,
             "name": "M80s",
             "description": "Loud explosives"
        	 }
        	},
        	{
         "Roman_Candles": {
-            "id": 2,
-            "type": 2,
+            "id": 8,
+            "type": 200,
             "name": "Roman Candles",
             "description": "Multi-colored rockets"
         	}
-     		}
+     	},
+        {
+        "sparklers": {
+            "id": 10,
+            "type": 300,
+            "name": "Sparklers",
+            "description": "Multi-colored sparklers"
+            }
+        },  
+        {
+        "m80s": {
+            "id": 9,
+            "type": 300,
+            "name": "M80s",
+            "description": "Loud explosives"
+         }
+        },
+        {
+        "Roman_Candles": {
+            "id": 8,
+            "type": 300,
+            "name": "Roman Candles",
+            "description": "Multi-colored rockets"
+            }
+        },
+        {
+        "SuperSplat": {
+            "id": 6,
+            "type": 400,
+            "name": "SuperSplat",
+            "description": "Loud explosives"
+         }
+        },
+        {
+        "Explodo-matic": {
+            "id": 5,
+            "type": 400,
+            "name": "Explodo-matic",
+            "description": "Multi-colored rockets"
+            }
+        },
+        {
+        "OrangeShower": {
+            "id": 4,
+            "type": 400,
+            "name": "OrangeShower",
+            "description": "Multi-colored sparklers"
+            }
+        },  
+        {
+        "GreenShower": {
+            "id": 2,
+            "type": 500,
+            "name": "GreenShower",
+            "description": "Multi-colored rockets"
+            }
+        },
+        {
+        "BlueShower": {
+            "id": 18,
+            "type": 500,
+            "name": "BlueShower",
+            "description": "Multi-colored sparklers"
+            }
+        },  
+        {
+        "Spinners": {
+            "id": 17,
+            "type": 500,
+            "name": "Spinners",
+            "description": "Loud explosives"
+         }
+        },
+        {
+        "Snaps": {
+            "id": 16,
+            "type": 600,
+            "name": "Snaps",
+            "description": "Multi-colored rockets"
+            }
+        },
+        {
+        "Whizzers": {
+            "id": 15,
+            "type": 600,
+            "name": "Whizzers",
+            "description": "Multi-colored sparklers"
+            }
+        },  
+        {
+        "Dynamite4": {
+            "id": 13,
+            "type": 600,
+            "name": "Dynamite4",
+            "description": "Multi-colored rockets"
+            }
+        },
+        {
+        "Dynamite3": {
+            "id": 12,
+            "type": 700,
+            "name": "Dynamite3",
+            "description": "Multi-colored sparklers"
+            }
+        },  
+        {
+        "Dynamite2": {
+            "id": 12,
+            "type": 700,
+            "name": "Dynamite2",
+            "description": "Loud explosives"
+         }
+        },
+        {
+        "Dynamite1": {
+            "id": 11,
+            "type": 700,
+            "name": "Dynamite1",
+            "description": "Multi-colored rockets"
+            }
+        }
     ]
 }

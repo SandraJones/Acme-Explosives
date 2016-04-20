@@ -1,20 +1,38 @@
 {
     "types": [
         {
-            "id": 5,
-            "category": 8,
+            "id": 200,
+            "category": 100,
             "name": "personal",
             "description": "Fireworks intended for recreational use."
         },
         {
-            "id":6,
-            "category": 9,
+            "id":300,
+            "category": 100,
             "name": "commercial",
             "description": "Fireworks intended for community celebrations."
         },
         {
-            "id": 7,
-            "category": 10,
+            "id":400,
+            "category": 100,
+            "name": "municipal",
+            "description": "Fireworks intended for community celebrations."
+        },
+        {
+            "id": 500,
+            "category": 1000,
+            "name": "construction",
+            "description": "Fireworks intended for building demolition."
+        },
+        {
+            "id": 600,
+            "category": 1000,
+            "name": "mining",
+            "description": "Fireworks intended for building demolition."
+        },
+        {
+            "id": 700,
+            "category": 1000,
             "name": "industrial",
             "description": "Fireworks intended for building demolition."
         }
