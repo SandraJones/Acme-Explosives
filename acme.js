@@ -1,5 +1,5 @@
 "use strict";
-
+let row = document.getElementById("row");
 var iAmAPromise = getCategories();
 function getCategories() {    
   return new Promise((resolve, reject) => {
@@ -34,10 +34,10 @@ function getTypes(){
 };
 var aPromise = getProducts();
 function getProducts(){
-      return new Promise((resolve, reject)=> {
+      return new Promise((resolve, reject) => {
           var productsLoader = new XMLHttpRequest();
           productsLoader.addEventListener("load", function() {
-              var productsList = JSON.parse(this.responseText).types;
+              var productsList = JSON.parse(this.responseText).products;
               resolve (productsList);
           });
           productsLoader.addEventListener("error", function(){    
@@ -59,18 +59,10 @@ iAmAPromise.then(function(value1){
       console.log("value", value3);
     });
 
-
-
-// //Original call site of the promise
-// getCategories()
-//   // Then gets executed when promise is resolved or rejected
-//   .then(
-//     // The first callback function will be invoked when you resolve
-//     function(categList) {
-//       console.log("API call successful and responded with", json_data);
-//     },
-//     // The second callback function will be invoked when you reject
-//     function(json_data) {
-//       console.log("API call not successful");
-//     }
-//   );  
+//print to the DOM//
+function buildCard(products) {
+  for (var i = 0; i < products.length; i++) {
+  row.innerHTML += `<div class="row">${products[i].name.value}</div><div>${products[i].categories.value}/div>`; 
+  };
+};
+buildCard();
