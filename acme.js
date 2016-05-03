@@ -1,4 +1,9 @@
 "use strict";
+
+// $( document ).ready(function(){
+//   console.log("document ready");
+// });
+
 let row1 = document.getElementById("row1");
 let iAmAPromise = getCategories();
 
@@ -64,21 +69,26 @@ iAmAPromise.then(function(value1){
   amAPromise.then(function(value2){
     // console.log("value", value2);
     });
+
     aPromise.then(function(value3){
       // console.log("value", value3);
     });
 
 //print to the DOM//
 function buildCard(products) {
-  for (let i = 0; i < products.length; i++) {
-    console.log("1 product", products[i]);
-    row1.innerHTML += `<div><section id="id${i}" class="col-xs-4 border card ${products[i].id}"><p>${products[i].type}</p>
-      <p>${products[i].name}</p><p>${products[i].description}</p></section></div>`; 
+  for (var outerKey in products) {
+    console.log(" outerKey", products[outerKey]);
+    for (var innerKey in products[outerKey]) {
+      console.log("innerKey ", products[outerKey][innerKey].description);
+    row1.innerHTML += `<div><section id="id" class="col-xs-4 border card ${products[outerKey][innerKey].id}"><p>${products[outerKey][innerKey].type}</p>
+      <p>${products[outerKey][innerKey].name}</p><p>${products[outerKey][innerKey].description}</p></section></div>`; 
+    };
   };
 };
-//I need to access the products array; wondering if I need to set up an iife.
-// tried ${aPromise.productsList[i].id}" did not work
-//products[i] did not work  all DOM output shows undefined
-//productsList[i] did not work 
-//getProducts.productsList[i]  Cannot read property of 0 undefined.
 
+
+//for each or for in  grab keys like for    key in products  $id.append in correct syntax
+
+//populate dom and then append to get the dropdowns $#(div).append(`<select etc. for dom printing)
+
+//use jqquery selexctor .each
