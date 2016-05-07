@@ -1,44 +1,27 @@
-<!DOCTYPE html>
+	<!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8">
-		<title>Document</title>
-		<!-- Latest compiled and minified CSS -->
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-	</head>
-	<body>
-	<div class="col-xs-12" style="height:20px;"></div>
-		<ul class="nav nav-pills">
-	  <li role="presentation" class="active"><a href="#">Home</a></li>
-	  <li role="presentation"><a href="#">About</a></li>
-	  <li role="presentation"><a href="#">Contact Us</a></li>
-		</ul>
-	<div class="col-xs-12" style="height:50px;"></div>
-	<div class="dropdown">
-	  <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-	    Categories
-	    <span class="caret"></span>
-	  </button>
-	  <ul class="dropdown-menu" data-toggle="dropdown" aria-labelledby="dropdownMenu1">
-	    <li><a href="#">Fireworks</a></li>
-	    <li><a href="#">Demolition</a></li>
-	    <!-- <li><a href="#">Something else here</a></li>
-	    <li role="separator" class="divider"></li>
-	    <li><a href="#">Separated link</a></li> -->
-	  </ul>
-	<div class="col-xs-12" style="height:50px;"></div>
-	<div class="col-xs-12" style="height:50px;"></div>
-	<!-- Columns start at 50% wide on mobile and bump up to 33.3% wide on desktop -->
-	  <div id="row1" class="col-xs-6 col-md-4"></div>
-	<!-- <div class="row">
-	  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-	  <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
-	</div> -->
-	</div>
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		<script type="text/javascript" src="acme.js"></script>
-	</body>
+<head>
+	<meta charset="UTF-8">
+	<title>ACME EXPLOSIVES</title>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="acme.css">
+</head>
+<body>
+	<header class="headingStyle">	</header>
+	<div>
+    <select id='category'>
+      <option selected>Category</option>
+      <option value="Fireworks">Fireworks</option>
+      <option value="Demolition">Demolition</option>
+    </select>
+  </div>
+  <div id="main-product-area" class="container">
+    <div id="categoryOutput" class="row1"></div>
+    <div id="typeOutput" class="row1"></div>
+    <div id="productOutput" class="row1"></div>
+  </div>  
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="acme.js"></script>
+</body>
 </html>
-<!-- Create a simple user interface for your product catalog where a user can select a category from a dropdown. When a category is selected, you must use Promises to read, first, from the categories.json to load that array of objects, then load types.json, then products.json.
-
-Once all data is loaded, you need to display the products in a Bootstrap grid. Each product must display the string name of its product type, and product category. Not the integer id value. -->
